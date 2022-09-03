@@ -31,7 +31,7 @@ The following table is a complete list of benchmarks included in JVBench in alph
 
 
 ### Obtaining the suite
-To run the suite, you can download the suite JAR from [link](link).
+To run the suite, you can download the suite JAR from [http://195.176.181.79/cgo23/JVBench-1.0.jar](http://195.176.181.79/cgo23/JVBench-1.0.jar).
 Alternatively, you can build it yourself. To do, you will need [Maven](https://maven.apache.org/) version 3.8 or above. 
 To build an executable JAR,  use the following command:
 ```shell
