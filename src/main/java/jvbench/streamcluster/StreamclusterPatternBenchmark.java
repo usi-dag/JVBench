@@ -17,7 +17,7 @@ public class StreamclusterPatternBenchmark {
 
         int chunkSize = Integer.parseInt(System.getProperty("chunksize", "128"));
         int clusterSize = Integer.parseInt(System.getProperty("clustersize", "10"));;
-        String inputFileName = System.getProperty("infile", "src/main/resources/streamcluster/input/streamcluster_128_128.input");
+        String inputFileName = System.getProperty("input", "/streamcluster/input/streamcluster_128_128.input");
         String outputFileName = System.getProperty("outfile", "output.txt");
         PStream stream;
 
@@ -37,7 +37,7 @@ public class StreamclusterPatternBenchmark {
 
         int chunkSize = Integer.parseInt(System.getProperty("chunksize", "128"));
         int clusterSize = Integer.parseInt(System.getProperty("clustersize", "10"));;
-        String inputFileName = System.getProperty("infile", "src/main/resources/streamcluster/input/streamcluster_128_128.input");
+        String inputFileName = System.getProperty("input", "/streamcluster/input/streamcluster_128_128.input");
         String outputFileName = System.getProperty("outfile", "output.txt");
         jvbench.streamclusterPow.PStream stream;
 
@@ -57,7 +57,7 @@ public class StreamclusterPatternBenchmark {
 
         int chunkSize = Integer.parseInt(System.getProperty("chunksize", "128"));
         int clusterSize = Integer.parseInt(System.getProperty("clustersize", "10"));;
-        String inputFileName = System.getProperty("infile", "src/main/resources/streamcluster/input/streamcluster_128_128.input");
+        String inputFileName = System.getProperty("input", "/streamcluster/input/streamcluster_128_128.input");
         String outputFileName = System.getProperty("outfile", "output.txt");
         jvbench.streamclusterIndexInRange.PStream stream;
 

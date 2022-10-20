@@ -9,7 +9,7 @@ public class LavaMDBenchmark {
     @State(Scope.Thread)
     public static class MyState {
 
-        static String inputFilename = System.getProperty("input", "src/main/resources/lavaMD/input/lavaMD_127776.input");
+        static String inputFilename = System.getProperty("input", "/lavaMD/input/lavaMD_127776.input");
 
 
         @Setup(Level.Trial)

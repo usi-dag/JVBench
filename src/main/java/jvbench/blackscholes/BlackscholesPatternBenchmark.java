@@ -14,7 +14,7 @@ public class BlackscholesPatternBenchmark {
 
         @Setup(Level.Trial)
         public static void setup() {
-            jvbench.blackscholesMergeWihtoutBlend.Blackscholes.init(System.getProperty("input","./src/main/resources/blackscholes/input/in_512K.input"));
+            jvbench.blackscholesMergeWihtoutBlend.Blackscholes.init(System.getProperty("input","/blackscholes/input/in_512K.input"));
         }
 
     }
@@ -24,7 +24,7 @@ public class BlackscholesPatternBenchmark {
 
         @Setup(Level.Trial)
         public static void setup() {
-            jvbench.blackscholesPow.Blackscholes.init(System.getProperty("input","./src/main/resources/blackscholes/input/in_512K.input"));
+            jvbench.blackscholesPow.Blackscholes.init(System.getProperty("input","/blackscholes/input/in_512K.input"));
         }
 
     }
@@ -34,7 +34,7 @@ public class BlackscholesPatternBenchmark {
 
         @Setup(Level.Trial)
         public static void setup() {
-            jvbench.blackscholesIndexInRange.Blackscholes.init(System.getProperty("input","./src/main/resources/blackscholes/input/in_512K.input"));
+            jvbench.blackscholesIndexInRange.Blackscholes.init(System.getProperty("input","/blackscholes/input/in_512K.input"));
         }
 
     }

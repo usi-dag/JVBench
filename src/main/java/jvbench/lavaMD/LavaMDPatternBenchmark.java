@@ -11,7 +11,7 @@ public class LavaMDPatternBenchmark {
     @State(Scope.Thread)
     public static class FmaState {
 
-        static String inputFilename = System.getProperty("input", "src/main/resources/lavaMD/input/lavaMD_127776.input");
+        static String inputFilename = System.getProperty("input", "/lavaMD/input/lavaMD_127776.input");
 
 
         @Setup(Level.Trial)
@@ -23,7 +23,7 @@ public class LavaMDPatternBenchmark {
     @State(Scope.Thread)
     public static class ReductionState {
 
-        static String inputFilename = System.getProperty("input", "src/main/resources/lavaMD/input/lavaMD_127776.input");
+        static String inputFilename = System.getProperty("input", "/lavaMD/input/lavaMD_127776.input");
 
 
         @Setup(Level.Trial)
@@ -35,7 +35,7 @@ public class LavaMDPatternBenchmark {
     @State(Scope.Thread)
     public static class IndexInRangeState {
 
-        static String inputFilename = System.getProperty("input", "src/main/resources/lavaMD/input/lavaMD_127776.input");
+        static String inputFilename = System.getProperty("input", "/lavaMD/input/lavaMD_127776.input");
 
 
         @Setup(Level.Trial)

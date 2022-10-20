@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class BlackScholesTest {
     @BeforeEach
     public void setUp() {
-        Blackscholes.init("src/main/resources/blackscholes/input/in_4K.input");
+        Blackscholes.init("/blackscholes/input/in_4K.input");
     }
 
     @Test

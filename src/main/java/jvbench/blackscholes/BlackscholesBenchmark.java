@@ -12,7 +12,7 @@ public class BlackscholesBenchmark {
 
         @Setup(Level.Trial)
         public static void setup() {
-            Blackscholes.init(System.getProperty("input","./src/main/resources/blackscholes/input/in_512K.input"));
+            Blackscholes.init(System.getProperty("input","/blackscholes/input/in_512K.input"));
         }
 
     }

@@ -4,7 +4,7 @@ import jdk.incubator.vector.IntVector;
 import jdk.incubator.vector.VectorSpecies;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Random;
 
@@ -27,7 +27,7 @@ public class PathFinder {
 
     public static void init(String inFilename) {
 
-        try(BufferedReader reader = new BufferedReader(new FileReader(inFilename))) {
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(PathFinder.class.getResourceAsStream(inFilename)))) {
 
             String [] params = reader.readLine().split(" ");
             rows = Integer.parseInt(params[0]);

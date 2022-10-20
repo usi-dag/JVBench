@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 class StreamClusterTest {
 
-    String input = "src/main/resources/streamcluster/input/streamcluster_128_128.input";
+    String input = "/streamcluster/input/streamcluster_128_128.input";
     long kMin = 3;
     long kMax = 10;
     int dim =128;

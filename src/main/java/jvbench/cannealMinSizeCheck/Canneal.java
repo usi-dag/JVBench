@@ -5,7 +5,7 @@ public class Canneal {
     private int numThreads = 1;
     private int swapPerTemp = 10000;
     private int initialTemperature = 2000;
-    private String netlistFilename = "src/main/resources/canneal/input/2500000.nets";
+    private String netlistFilename = "/canneal/input/2500000.nets";
     private int numTempStep = 300;
     private static NetList netlist;
     private static AnnealerThread aT;

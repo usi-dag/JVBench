@@ -1,7 +1,7 @@
 package jvbench.cannealReduction;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +22,7 @@ public class NetList {
 
 
     public NetList(String fileName) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(fileName)))) {
             String [] options = reader.readLine().split("\\s+");
 
             if (options.length != 3) {

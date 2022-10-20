@@ -13,7 +13,7 @@ public class PathfinderBenchmark {
     public static class MyState {
         @Setup(Level.Trial)
         public void setup() {
-            jvbench.pathfinderConditionInsideLoop.PathFinder.init(System.getProperty("input", "src/main/resources/pathfinder/input/pathfinder_5000_5000.input"));
+            jvbench.pathfinderConditionInsideLoop.PathFinder.init(System.getProperty("input", "/pathfinder/input/pathfinder_5000_5000.input"));
         }
     }
 

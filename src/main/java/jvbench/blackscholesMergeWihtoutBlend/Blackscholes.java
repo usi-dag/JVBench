@@ -3,7 +3,7 @@ package jvbench.blackscholesMergeWihtoutBlend;
 import jdk.incubator.vector.*;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class Blackscholes {
@@ -35,7 +35,7 @@ public class Blackscholes {
     private static final float inv_sqrt_2xPI = (float) 0.39894228040143270286;
 
     public static void init(String inputFileName) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFileName))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(Blackscholes.class.getResourceAsStream(inputFileName)))) {
 
             numOptions = Integer.parseInt(reader.readLine());
 

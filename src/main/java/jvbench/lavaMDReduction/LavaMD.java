@@ -6,7 +6,7 @@ import jdk.incubator.vector.VectorOperators;
 import jdk.incubator.vector.VectorSpecies;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Random;
 
@@ -33,7 +33,7 @@ public class LavaMD {
 
         int nh;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilename))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(LavaMD.class.getResourceAsStream(inputFilename)))) {
 
             String [] params = reader.readLine().split(" "); // read param
             dimCPU.cores_arg = Integer.parseInt(params[0]); // not used

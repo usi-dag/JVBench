@@ -11,7 +11,7 @@ class PathFinderTest {
 
     @BeforeEach
     void setUp() {
-        PathFinder.init(System.getProperty("input", "src/main/resources/pathfinder/input/pathfinder_32_32.input"));
+        PathFinder.init(System.getProperty("input", "/pathfinder/input/pathfinder_32_32.input"));
     }
 
     @Test

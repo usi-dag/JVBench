@@ -17,7 +17,7 @@ class CannealTest {
                 1,
                 15000,
                 2000,
-                "src/main/resources/canneal/input/100.nets",
+                "/canneal/input/100.nets",
                 128
         );
 
@@ -25,7 +25,7 @@ class CannealTest {
                 1,
                 15000,
                 2000,
-                "src/main/resources/canneal/input/100.nets",
+                "/canneal/input/100.nets",
                 128
         );
 

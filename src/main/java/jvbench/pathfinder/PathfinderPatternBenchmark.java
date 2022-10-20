@@ -13,7 +13,7 @@ public class PathfinderPatternBenchmark {
     public static class ConditionInsideLoopState {
         @Setup(Level.Trial)
         public void setup() {
-            PathFinder.init(System.getProperty("input", "src/main/resources/pathfinder/input/pathfinder_5000_5000.input"));
+            PathFinder.init(System.getProperty("input", "/pathfinder/input/pathfinder_5000_5000.input"));
         }
     }
 
@@ -21,7 +21,7 @@ public class PathfinderPatternBenchmark {
     public static class IndexInRangeState {
         @Setup(Level.Trial)
         public void setup() {
-            jvbench.pathfinderIndexInRange.PathFinder.init(System.getProperty("input", "src/main/resources/pathfinder/input/pathfinder_5000_5000.input"));
+            jvbench.pathfinderIndexInRange.PathFinder.init(System.getProperty("input", "/pathfinder/input/pathfinder_5000_5000.input"));
         }
     }
 

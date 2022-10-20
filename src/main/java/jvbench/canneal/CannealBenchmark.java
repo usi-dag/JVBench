@@ -17,10 +17,10 @@ public class CannealBenchmark {
         public void setup() {
                     canneal = new Canneal(
                             Integer.parseInt(System.getProperty("N_THREADS","1")),
-                            Integer.parseInt(System.getProperty("N_SWAPS","10000")),
+                            Integer.parseInt(System.getProperty("nswaps","10000")),
                             Integer.parseInt(System.getProperty("TEMP","2000")),
-                            System.getProperty("NETLIST","src/main/resources/canneal/input/2500000.nets"),
-                            Integer.parseInt(System.getProperty("N_STEPS","300"))
+                            System.getProperty("netlist","/canneal/input/2500000.nets"),
+                            Integer.parseInt(System.getProperty("nsteps","300"))
                     );
 
                     canneal.init();

@@ -31,7 +31,7 @@ public class LavaMD {
 
         int nh;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilename))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(LavaMD.class.getResourceAsStream(inputFilename)))) {
 
             String [] params = reader.readLine().split(" "); // read param
             dimCPU.cores_arg = Integer.parseInt(params[0]); // not used

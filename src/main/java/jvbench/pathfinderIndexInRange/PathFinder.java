@@ -6,7 +6,7 @@ import jdk.incubator.vector.VectorOperators;
 import jdk.incubator.vector.VectorSpecies;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.Random;
 
@@ -28,13 +28,13 @@ public class PathFinder {
     private String outFileName;
 
     public static void main(String[] args) {
-        init("src/main/resources/pathfinder/input/pathfinder_32_32.input");
+        init("/pathfinder/input/pathfinder_32_32.input");
         vector();
     }
 
     public static void init(String inFilename) {
 
-        try(BufferedReader reader = new BufferedReader(new FileReader(inFilename))) {
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(PathFinder.class.getResourceAsStream(inFilename)))) {
 
             String [] params = reader.readLine().split(" ");
             rows = Integer.parseInt(params[0]);

@@ -2,7 +2,7 @@ package jvbench.streamclusterPow;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class FileStream implements PStream {
@@ -17,7 +17,7 @@ public class FileStream implements PStream {
     @Override
     public int read(float[] dest, int dim, int num) {
 
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(filename)))) {
             int count = 0;
             String line;
             while ((line = reader.readLine()) != null && count < num) {

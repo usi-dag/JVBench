@@ -9,7 +9,7 @@ class LavaMDTest {
 
     @BeforeEach
     public void setup() {
-        LavaMD.init("src/main/resources/lavaMD/input/lavaMD_96.input");
+        LavaMD.init("/lavaMD/input/lavaMD_96.input");
     }
 
     @Test

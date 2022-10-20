@@ -68,14 +68,14 @@ The default input (expressed as different system properties) for each benchmark 
 | Application Name | Default Input                                                                                                                         |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | Axpy             | -Dsize=70000                                                                                                                          |
-| Blackscholes     | -Dinput=./src/main/resources/blackscholes/input/in_512K.input                                                                         |
-| Canneal          | -DN_SWAPS=10000 -DTEMP=2000 -DNETLIST=src/main/resources/canneal/input/2500000.nets -DN_STEPS=300                                     |
+| Blackscholes     | -Dinput=blackscholes/input/in_512K.input                                                                         |
+| Canneal          | -Dnswaps=10000 -DTEMP=2000 -Dnetlist=canneal/input/2500000.nets -Dnsteps=300                                     |
 | Jacobi-2D        | -Dsize=10000 -Dtsteps=14                                                                                                              |
-| LavaMD           | -Dinput=src/main/resources/lavaMD/input/lavaMD_127776.input                                                                           |
+| LavaMD           | -Dinput=lavaMD/input/lavaMD_127776.input                                                                           |
 | Particlefilter   | -Dx=128 -Dy=128 -Dz=24 -Dnp=32768                                                                                                     |
-| Pathfinder       | -Dinput=src/main/resources/pathfinder/input/pathfinder_5000_5000.input                                                                |
+| Pathfinder       | -Dinput=pathfinder/input/pathfinder_5000_5000.input                                                                |
 | Somier           | -Dsteps=10 -Dn=128                                                                                                                    |
-| Streamcluster    | -Dk1=3 -Dk2=10 -Ddim=128 -Dchunksize=128 -Dclustersize=10 -Dinfile=src/main/resources/streamcluster/input/streamcluster_128_128.input |
+| Streamcluster    | -Dk1=3 -Dk2=10 -Ddim=128 -Dchunksize=128 -Dclustersize=10 -Dinput=streamcluster/input/streamcluster_128_128.input |
 | Swaptions        | -Dms=64 -Dns=16384                                                                                                                    |
 
 
