@@ -54,7 +54,7 @@ For a complete description refers to [JHM tutorial](https://github.com/guozheng/
 Moreover, it is possible to override the default benchmark input with the following command.
 
 ```shell
-$ java --add-modules <inputs> jdk.incubator.vector -jar JVBench-1.0.jar "<benchmarks>"
+$ java --add-modules jdk.incubator.vector <inputs> -jar JVBench-1.0.jar "<benchmarks>"
 ```
 
 For example, to specify an input size of 70k elements to Axpy, you can run the following command:
