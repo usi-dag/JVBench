@@ -60,7 +60,7 @@ $ java --add-modules jdk.incubator.vector <inputs> -jar JVBench-1.0.jar "<benchm
 For example, to specify an input size of 70k elements to Axpy, you can run the following command:
 
 ```shell
-$ java --add-modules -Dsize=70000 jdk.incubator.vector -jar JVBench-1.0.jar "AxpyBenchmark"
+$ java --add-modules jdk.incubator.vector -Dsize=70000 -jar JVBench-1.0.jar "AxpyBenchmark"
 ```
 
 The default input (expressed as different system properties) for each benchmark is listed in the table below
