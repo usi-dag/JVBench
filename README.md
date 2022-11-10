@@ -42,7 +42,7 @@ $ mvn clean package
 ### Running the suite
 To run a JVBench benchmark, execute the following java command:
 ```shell
-$ java --add-modules jdk.incubator.vector -jar JVBench-1.0.jar "<benchmarks>"
+$ java --add-modules jdk.incubator.vector -jar JVBench-1.0.1.jar "<benchmarks>"
 ```
 where <benchmarks> is the benchmark name that you wish to run. Please append the word "Benchmark" to the benchmark name. For example, to run benchmark Axpy, specify `AxpyBenchmark` as the benchmark.
 
@@ -54,13 +54,13 @@ For a complete description refers to [JHM tutorial](https://github.com/guozheng/
 Moreover, it is possible to override the default benchmark input with the following command.
 
 ```shell
-$ java --add-modules jdk.incubator.vector <inputs> -jar JVBench-1.0.jar "<benchmarks>"
+$ java --add-modules jdk.incubator.vector <inputs> -jar JVBench-1.0.1.jar "<benchmarks>"
 ```
 
 For example, to specify an input size of 70k elements to Axpy, you can run the following command:
 
 ```shell
-$ java --add-modules jdk.incubator.vector -Dsize=70000 -jar JVBench-1.0.jar "AxpyBenchmark"
+$ java --add-modules jdk.incubator.vector -Dsize=70000 -jar JVBench-1.0.1.jar "AxpyBenchmark"
 ```
 
 The default input (expressed as different system properties) for each benchmark is listed in the table below
