@@ -28,7 +28,7 @@ questions.
 
     <groupId>jvbench</groupId>
     <artifactId>JVBench</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Java Vector API JMH benchmark suite</name>
@@ -61,7 +61,6 @@ questions.
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jmh.version>1.35</jmh.version>
         <javac.target>18</javac.target>
-        <uberjar.name>benchmarks</uberjar.name>
     </properties>
 
     <build>
@@ -91,7 +90,6 @@ questions.
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-<!--                            <finalName>${uberjar.name}</finalName>-->
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>org.openjdk.jmh.Main</mainClass>
