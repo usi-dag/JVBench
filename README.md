@@ -10,7 +10,7 @@ recasting them in Java and expressing vector operations with the Java Vector API
 
 ### List of benchmarks
 
-The following table is a complete list of benchmarks included in JVBench in alphabetical order.
+The following table is a complete list of benchmarks included in JVBench in alphabetical order:
 
 | Application Name | Application Domain         | Algorithmic Model    | Taken From |
 |------------------|----------------------------|----------------------|------------|
@@ -31,9 +31,10 @@ The following table is a complete list of benchmarks included in JVBench in alph
 
 
 ### Obtaining the suite
-To run the suite, you can download the suite JAR [here](http://195.176.181.79/cc23/JVBench-1.0.1.jar).
-Alternatively, you can build it yourself. To do, you will need [Maven](https://maven.apache.org/) version 3.8 or above. 
-To build an executable JAR,  use the following command:
+To run the suite, you can download the suite JAR [here](https://github.com/usi-dag/JVBench/releases).
+Alternatively, you can build it yourself. To do so, you will need [Maven](https://maven.apache.org/) version 3.8 or above. 
+To build an executable JAR, use the following command:
+
 ```shell
 $ mvn clean package
 ```
@@ -41,17 +42,19 @@ $ mvn clean package
 
 ### Running the suite
 To run a JVBench benchmark, execute the following java command:
+
 ```shell
 $ java --add-modules jdk.incubator.vector -jar JVBench-1.0.1.jar "<benchmarks>"
 ```
+
 where <benchmarks> is the benchmark name that you wish to run. Please append the word "Benchmark" to the benchmark name. For example, to run benchmark Axpy, specify `AxpyBenchmark` as the benchmark.
 
 By default, the suite executes each benchmark operation for a specific number of times.
 For thorough experimental evaluation, the benchmarks should be repeated for a large number of times or executed for a long time. 
 The number of repetitions and the execution time can be set for all benchmarks using the -f, -wi, and -i options.
-For a complete description refers to [JHM tutorial](https://github.com/guozheng/jmh-tutorial/blob/master/README.md)
+For a complete description, please refer to [JHM tutorial](https://github.com/guozheng/jmh-tutorial/blob/master/README.md)
 
-Moreover, it is possible to override the default benchmark input with the following command.
+Moreover, it is possible to override the default benchmark input with the following command:
 
 ```shell
 $ java --add-modules jdk.incubator.vector <inputs> -jar JVBench-1.0.1.jar "<benchmarks>"
@@ -63,7 +66,7 @@ For example, to specify an input size of 70k elements to Axpy, you can run the f
 $ java --add-modules jdk.incubator.vector -Dsize=70000 -jar JVBench-1.0.1.jar "AxpyBenchmark"
 ```
 
-The default input (expressed as different system properties) for each benchmark is listed in the table below
+The default input (expressed as different system properties) for each benchmark is listed in the table below:
 
 | Application Name | Default Input                                                                                                                         |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------|
